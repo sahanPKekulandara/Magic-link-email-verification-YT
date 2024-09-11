@@ -1,0 +1,10 @@
+CREATE TABLE IF NOT EXISTS `users` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `email` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `verified` varchar(100) DEFAULT '0', -- Assuming verification status as a string ('0' for not verified)
+  `status` varchar(20) DEFAULT '1',    -- Assuming status as a string, if not, consider int or enum
+  `verification_token` varchar(255) DEFAULT NULL,
+  `token_expiration` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
+);

@@ -1,0 +1,3 @@
+1) create Databace
+2) go to connectin.php and set databace and deatils
+3) go signUpProcess.php line 61,62,67 change that
